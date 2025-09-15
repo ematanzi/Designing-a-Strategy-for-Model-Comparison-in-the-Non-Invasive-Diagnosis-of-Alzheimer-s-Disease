@@ -48,7 +48,24 @@ The comparative analysis emphasizes **robustness over isolated performance peaks
 ---
 
 ## Outcomes
+
+<p align="center">
+  <img src="images\f1_macro.png" alt="f1-macro Boxplots" width="30%"/>
+  <img src="images\balanced_acc.png" alt="Balanced accuracy Boxplots" width="30%"/>
+  <img src="images\pr_auc_macro.png" alt="PR-AUC macro Boxplots" width="30%"/>
+</p>
+
+
 Preliminary findings show that **XGBoost with class weighting** consistently outperforms other strategies, offering balanced detection across classes. Hierarchical approaches and resampling-enhanced Random Forests also demonstrate competitive results, highlighting the relevance of ensemble methods for this problem.  
+
+| ![First](images\cm_orig.png) | ![Second](images\cm_base.png) | ![Third](images\cm_adv.png) |
+|---------------------------|----------------------------|----------------------------|
+| Baseline (original data)  | Baseline                   | Random Forest + resampling |
+
+| ![First](images\cm_xgb.png) | ![Second](images\cm_svm.png) | ![Third](images\cm_hier.png) |
+|---------------------------|----------------------------|----------------------------|
+| XGB + class weighting     | SVM with RBF kernel        | Hierarchical model         |
+
 
 Future directions include exploring more advanced feature selection, hybrid hierarchical methods, and integration with multi-omics data to further boost interpretability and predictive power.
 
