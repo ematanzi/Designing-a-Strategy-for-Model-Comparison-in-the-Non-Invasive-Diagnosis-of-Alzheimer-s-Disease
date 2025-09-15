@@ -58,11 +58,11 @@ The comparative analysis emphasizes **robustness over isolated performance peaks
 
 Preliminary findings show that **XGBoost with class weighting** consistently outperforms other strategies, offering balanced detection across classes. Hierarchical approaches and resampling-enhanced Random Forests also demonstrate competitive results, highlighting the relevance of ensemble methods for this problem.  
 
-| ![First](images\cm_orig.png) | ![Second](images\cm_base.png) | ![Third](images\cm_adv.png) |
+| ![First](images/cm_orig.png) | ![Second](images/cm_base.png) | ![Third](images/cm_adv.png) |
 |---------------------------|----------------------------|----------------------------|
 | Baseline (original data)  | Baseline                   | Random Forest + resampling |
 
-| ![First](images\cm_xgb.png) | ![Second](images\cm_svm.png) | ![Third](images\cm_hier.png) |
+| ![First](images/cm_xgb.png) | ![Second](images/cm_svm.png) | ![Third](images/cm_hier.png) |
 |---------------------------|----------------------------|----------------------------|
 | XGB + class weighting     | SVM with RBF kernel        | Hierarchical model         |
 
